@@ -10,12 +10,14 @@ body {
   font-family: "DM Sans", sans-serif;
   font-family: "Manrope", sans-serif;
   font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   color: var(--blackish-color);
   text-align: var(--alignment);
 }
@@ -23,6 +25,7 @@ h3 {
 h1 {
   font-size: 86px;
   margin: 0;
+  text-transform: capitalize;
 }
 
 h2 {
@@ -35,6 +38,12 @@ h3 {
   font-size: 24px;
   opacity: 0.7;
   margin: 0;
+}
+
+h4 {
+  font-size: 18px;
+  opacity: 0.7;
+  margin: 10px;
 }
 
 .links {
@@ -52,6 +61,7 @@ h3 {
   color: var(--secondary-color);
   border-radius: 4px;
   box-shadow: var(--box-shadow);
+  text-transform: capitalize;
 }
 
 .paragraphs {
@@ -66,10 +76,10 @@ h3 {
   background: var(--primary-color);
   width: 200px;
   padding: 30px;
+  line-height: 1.5;
 }
 
 #contact {
-  background: var(--primary-color);
   color: var(--secondary-color);
 }
 
@@ -80,9 +90,12 @@ h3 {
 
 #contact-me {
   text-align: var(--alignment);
+  font-size: 18px;
+  padding-bottom: 75px;
 }
 
 .back-to-homepage {
   text-align: var(--alignment);
   color: var(--blackish-color);
+  padding: 30px;
 }
