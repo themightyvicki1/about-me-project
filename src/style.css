@@ -11,7 +11,7 @@ body {
   font-family: "Manrope", sans-serif;
   font-family: "Montserrat", sans-serif;
   font-family: "Raleway", sans-serif;
-  font-weight: bold;
+  background-color: #fffafa;
 }
 
 h1,
@@ -78,9 +78,15 @@ h4 {
   padding: 30px;
   line-height: 1.5;
 }
+.back-to-homepage {
+  text-align: var(--alignment);
+  color: var(--blackish-color);
+  padding: 30px;
+}
 
-#contact {
+#email {
   color: var(--secondary-color);
+  font-size: 20px;
 }
 
 #about {
@@ -90,12 +96,6 @@ h4 {
 
 #contact-me {
   text-align: var(--alignment);
-  font-size: 18px;
+  font-size: 28px;
   padding-bottom: 75px;
-}
-
-.back-to-homepage {
-  text-align: var(--alignment);
-  color: var(--blackish-color);
-  padding: 30px;
 }
