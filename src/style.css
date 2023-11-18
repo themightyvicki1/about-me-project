@@ -1,106 +1,153 @@
 :root {
-  --alignment: center;
-  --primary-color: #d5def5;
-  --secondary-color: #8594e4;
-  --blackish-color: #2a2438;
+  --primary-color: #6c63ff;
+  --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-body {
-  font-family: "DM Sans", sans-serif;
-  font-family: "Manrope", sans-serif;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Raleway", sans-serif;
-  background-color: #fffafa;
 }
 
 h1,
 h2,
-h3,
-h4 {
-  color: var(--blackish-color);
-  text-align: var(--alignment);
+h3 {
+  margin: 0;
 }
 
 h1 {
-  font-size: 86px;
-  margin: 0;
-  text-transform: capitalize;
+  font-size: 96px;
 }
 
 h2 {
   font-size: 48px;
-  padding-top: 40px;
-  margin: 0;
 }
 
 h3 {
   font-size: 24px;
   opacity: 0.7;
-  margin: 0;
 }
 
-h4 {
-  font-size: 18px;
-  opacity: 0.7;
-  margin: 10px;
-}
-
-.links {
-  display: flex;
-  justify-content: center;
-  padding: 40px 15px;
-}
-/*the links (a) stored inside the links class name div */
-.links a {
-  text-decoration: none;
-  /* space between each link */
-  margin: 20px;
-  border: 2px solid var(--primary-color);
+p #about {
+  background: var(--secondary-color);
   padding: 20px;
-  color: var(--secondary-color);
   border-radius: 4px;
-  box-shadow: var(--box-shadow);
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
   text-transform: capitalize;
 }
 
-.paragraphs {
+.contact-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.about-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
+.about-paragraphs {
+  margin: 30px 0;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.about-paragraphs p {
+  margin: 10px;
+}
+
+.email-link {
   display: flex;
   justify-content: center;
-  margin: 20px;
-}
-
-.paragraphs p {
-  margin: 20px;
-  border: 2px solid black;
-  background: var(--primary-color);
-  width: 200px;
-  padding: 30px;
-  line-height: 1.5;
-}
-.back-to-homepage {
-  text-align: var(--alignment);
-  color: var(--blackish-color);
-  padding: 30px;
-}
-
-#email {
-  color: var(--secondary-color);
-  font-size: 20px;
-}
-
-#about {
   color: var(--primary-color);
-  background: var(--secondary-color);
-}
-
-#contact-me {
-  text-align: var(--alignment);
   font-size: 28px;
-  padding-bottom: 75px;
+  text-decoration: none;
+  padding-bottom: 30px;
 }
 
-/* to style the navigation bar appearance */
-.container-fluid {
-  background-color: pink;
+.email-link:hover {
+  text-decoration: underline;
+}
+
+/*style the text for each app image */
+.description {
+  color: black;
+}
+
+.launch {
+  text-decoration: none;
+  padding: 20px 15px;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.app-title {
+  text-align: left;
+}
+
+.col-sm-4 img {
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 8px;
+  box-shadow: var(--box-shadow);
+}
+
+body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* make the about me on second page smaller for smaller screen and add padding between */
+@media (max-width: 576px) {
+  #about-me-header {
+    font-size: 46px;
+    line-height: 1.5;
+  }
+  .col-sm-4 {
+    padding-bottom: 30px;
+  }
+
+  .col-sm-6 p {
+    text-align: center;
+  }
+
+  .col-sm-6 h2 {
+    text-align: center;
+    font-size: 32px;
+  }
+  .launch {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
+
+  #my-name {
+    font-size: 36px;
+  }
+  #hi {
+    font-size: 28px;
+  }
+  #front-end {
+    font-size: 18px;
+  }
 }
